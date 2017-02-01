@@ -265,14 +265,14 @@ void LogMessage::SendToLog() {
     {
         pthread_mutex_lock(&g_cout_mutex);
         std::cout.write(data_->message_text_, (size_t)(data_->num_chars_to_log_));
-        
+
         if (g_current_log_file) {
             fwrite(data_->message_text_,
                    (size_t)(data_->num_chars_to_log_),
                    1,
                    g_current_log_file);
         }
-        
+
         pthread_mutex_unlock(&g_cout_mutex);
     }
 }
