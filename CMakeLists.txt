@@ -26,6 +26,7 @@ target_include_directories(
 
 target_link_libraries(
   wnlogging
-  /usr/local/lib/libgflags.a
+  // pthread
+  // /usr/lib/x86_64-linux-gnu/libgflags.a
 )
 

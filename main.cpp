@@ -1,9 +1,9 @@
 #include "WNLogging.h"
-#include <gflags/gflags.h>
+// #include <gflags/gflags.h>
 
 int main(int argc, char** argv)
 {
-    google::ParseCommandLineFlags(&argc, &argv, true);
+    // google::ParseCommandLineFlags(&argc, &argv, true);
 
     LOG(INFO) << "hello!";
     LOG(INFO) << "it works!";
